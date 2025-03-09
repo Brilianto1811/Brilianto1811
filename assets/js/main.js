@@ -53,23 +53,28 @@ const sr = ScrollReveal({
 
 document.addEventListener('DOMContentLoaded', function () {
     const skills = [
-        { name: "HMTL5", percentage: "90%", icon: "bxl-html5" }, // Ikon PHP diperbaiki
-        { name: "CSS3", percentage: "90%", icon: "bxl-css3" },
-        { name: "PHP", percentage: "90%", icon: "bxl-php" },
-        { name: "UX/UI", percentage: "80%", icon: "bxs-paint" },
-        { name: "React", percentage: "70%", icon: "bxl-react" },
-        { name: "Node.js", percentage: "70%", icon: "bxl-nodejs" },
-        { name: "Jquery", percentage: "65%", icon: "bxl-jquery" }, // Ikon Laravel juga diperbaiki
-        { name: "JavaScript", percentage: "50%", icon: "bxl-javascript" }
-        // Add more skills as needed
-    ];
+        { name: "PHP", percentage: "75%", icon: "bxl-php" },
+        { name: "JavaScript", percentage: "70%", icon: "bxl-javascript" },
+        { name: "HTML5", percentage: "80%", icon: "bxl-html5" },
+        { name: "CSS3", percentage: "80%", icon: "bxl-css3" },
+        { name: "UI/UX Design", percentage: "75%", icon: "bxs-paint" },
+        { name: "System Analysis & Design", percentage: "75%", icon: "bxs-data" },
+        { name: "Software Development Life Cycle (SDLC)", percentage: "75%", icon: "bxs-cog" },
+        { name: "Business Process Modeling", percentage: "70%", icon: "bxs-network-chart" },
+        { name: "Database Management", percentage: "70%", icon: "bxs-data" },
+        { name: "API Development & Integration", percentage: "70%", icon: "bxs-plug" },
+        { name: "Microsoft Office", percentage: "75%", icon: "bxl-microsoft" },
+        { name: "jQuery", percentage: "75%", icon: "bxl-jquery" },
+        { name: "React (Next JS)", percentage: "70%", icon: "bxl-react" },
+        { name: "Project Management", percentage: "70%", icon: "bxs-briefcase" }
+    ];    
 
 
     const skillsList = document.querySelector('.skills__list');
     const prevButton = document.getElementById('prevButton');
     const nextButton = document.getElementById('nextButton');
     let currentIndex = 0;
-    const skillsPerPage = 4;
+    const skillsPerPage = 3;
 
     function displaySkills() {
         skillsList.innerHTML = ''; // Clear previous skills
